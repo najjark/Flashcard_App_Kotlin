@@ -1,0 +1,75 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:gravity="center_horizontal"
+android:background="@color/backgroundColor">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/create_your_own_flashcards"
+    android:textSize="30sp"
+    android:textColor="@color/primaryTextColor"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginBottom="30dp" />
+
+<EditText
+    android:id="@+id/topicInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/enter_flashcard_topic"
+    android:layout_marginTop="30dp"
+    android:minHeight="48dp"
+    android:padding="14dp"
+    android:background="@drawable/rounded_edittext"
+    android:textColor="@color/primaryTextColor"
+    android:textColorHint="@color/hintTextColor" />
+
+<EditText
+    android:id="@+id/questionInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/enter_question"
+    android:layout_marginTop="30dp"
+    android:minHeight="48dp"
+    android:padding="14dp"
+    android:background="@drawable/rounded_edittext"
+    android:textColor="@color/primaryTextColor"
+    android:textColorHint="@color/hintTextColor" />
+
+<EditText
+    android:id="@+id/answerInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/enter_answer"
+    android:layout_marginTop="30dp"
+    android:minHeight="48dp"
+    android:padding="14dp"
+    android:background="@drawable/rounded_edittext"
+    android:textColor="@color/primaryTextColor"
+    android:textColorHint="@color/hintTextColor" />
+
+<Button
+    android:id="@+id/saveButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="Save Flashcard"
+    android:padding="14dp"
+    android:background="@drawable/rounded_button"
+    android:textColor="@color/buttonTextColor" />
+
+<Button
+    android:id="@+id/backToHomeButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Back to Home"
+    android:padding="14dp"
+    android:background="@drawable/rounded_button"
+    android:textColor="@color/buttonTextColor" />
+</LinearLayout>

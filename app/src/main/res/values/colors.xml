@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="flashcardbackgroundcolor">#EDE7F6</color>
+
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="hintTextColor">#9E9E9E</color>
+
+    <color name="dividerColor">#D3D3D3</color>
+
+    <color name="buttonBackgroundColor">#6200EE</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+
+    <color name="errorColor">#B00020</color>
+
+    <color name="recyclerBackgroundColor">#F5F5F5</color>
+</resources>

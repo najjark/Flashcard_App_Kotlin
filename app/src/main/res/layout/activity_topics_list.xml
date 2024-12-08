@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Flashcard Topics"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Topics"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/hintTextColor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topicsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/recycler_background" />
+
+    <Button
+        android:id="@+id/backToHomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="14dp"
+        android:text="@string/back_to_home"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/buttonTextColor" />
+</LinearLayout>

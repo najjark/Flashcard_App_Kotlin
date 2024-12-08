@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top|center_horizontal"
+    android:background="@color/backgroundColor"
+    tools:context=".LLMFlashcardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_flashcard_background"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/loadingIndicator"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminate="true"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/flashcardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flashcard Question"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:padding="16dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/primaryTextColor"
+                tools:ignore="HardcodedText" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/showAnswerButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Show Answer"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/buttonBackgroundColor"
+            android:textColor="@color/buttonTextColor"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/correctButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/correct"
+                android:backgroundTint="@color/buttonBackgroundColor"
+                android:textColor="@color/buttonTextColor" />
+
+            <Button
+                android:id="@+id/incorrectButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/incorrect"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/buttonBackgroundColor"
+                android:textColor="@color/buttonTextColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/previousButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/previous_flashcard"
+                android:backgroundTint="@color/buttonBackgroundColor"
+                android:textColor="@color/buttonTextColor" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_flashcard"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/buttonBackgroundColor"
+                android:textColor="@color/buttonTextColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backToHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/back_to_home"
+            android:backgroundTint="@color/buttonBackgroundColor"
+            android:textColor="@color/buttonTextColor" />
+
+        <Button
+            android:id="@+id/saveFlashcardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_flashcard"
+            android:backgroundTint="@color/buttonBackgroundColor"
+            android:textColor="@color/buttonTextColor" />
+    </LinearLayout>
+</LinearLayout>

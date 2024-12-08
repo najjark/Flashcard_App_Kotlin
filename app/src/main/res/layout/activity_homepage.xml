@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@color/backgroundColor"
+    android:focusableInTouchMode="true"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flashcard_generator"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/topicEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_flashcard_topic"
+        android:inputType="text"
+        android:padding="14dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/hintTextColor"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_number_of_flashcards"
+        android:inputType="number"
+        android:padding="14dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/hintTextColor"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/generateFlashcardsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/generate_flashcards"
+            android:padding="14dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/buttonTextColor"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/randomTopicButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/generate_random_flashcards"
+            android:padding="14dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/buttonTextColor"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/progressTrackerButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="@string/progress_tracker"
+            android:padding="14dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/buttonTextColor"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/createFlashcardButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/create_flashcard"
+            android:padding="14dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/buttonTextColor"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewUserFlashcardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viewUserFlashcardButton"
+        android:padding="14dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/buttonTextColor"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:padding="14dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/buttonTextColor"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

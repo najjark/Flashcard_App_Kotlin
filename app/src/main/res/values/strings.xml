@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FlashcardApp</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="app_title">CardCraft</string>
+    <string name="flashcard_generator">Flashcard Generator</string>
+    <string name="generate_flashcards">Generate Flashcards</string>
+    <string name="logout">Logout</string>
+    <string name="generate_random_flashcards">Generate Random Flashcards</string>
+    <string name="enter_flashcard_topic">Enter Flashcard Topic</string>
+    <string name="enter_number_of_flashcards">Enter Number of Flashcards (1–10)</string>
+    <string name="customize_flashcards">Customize Flashcards\n</string>
+    <string name="progress_tracker">Progress Tracker</string>
+    <string name="random_topic_generator">Random Topic Generator</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="correct">Correct</string>
+    <string name="next_flashcard">Next Flashcard</string>
+    <string name="previous_flashcard">Previous Flashcard</string>
+    <string name="create_flashcard">Create Your Own Flashcards</string>
+    <string name="viewUserFlashcardButton">View Saved Flashcards</string>
+    <string name="back_to_flashcard_list">Back To Flashcard List</string>
+    <string name="save_flashcard">Save Current Flashcard</string>
+    <string name="back_to_topics">Back To Topics</string>
+    <string name="create_your_own_flashcards">Create Your Own Flashcards:</string>
+    <string name="enter_question">Enter question</string>
+    <string name="enter_answer">Enter answer</string>
+</resources>
