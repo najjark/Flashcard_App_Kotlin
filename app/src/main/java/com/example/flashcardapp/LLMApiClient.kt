@@ -14,7 +14,7 @@ import okhttp3.MediaType.Companion.toMediaTypeOrNull
 class LLMApiClient {
     private val client = OkHttpClient()
     private val apiUrl = "https://api.openai.com/v1/chat/completions"
-    private val apiKey = "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"
+    private val apiKey = "YOUR_API_KEY"
 
     // Function to initiate the LLM call, as well as ensuring that new content generated will be different
     // to content already existing in the database
