@@ -14,4 +14,5 @@ The application will keep track of the user's most recent topics and the percent
 
 # Firebase Storage and Authentication
 The app uses a Firestore database to store the flashcards and whether they were answered correctly or not so the user can review their progress.
+
 It also implements Authentication using Firebase to keep track of user accounts and progress.
